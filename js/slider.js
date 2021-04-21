@@ -1,0 +1,37 @@
+$(window).on('load',function(){
+    $('#sliderBack').slick({
+        centerMode:false,
+        adaptiveHeight:true,
+        arrows:false,
+        autoplay:true,
+        autoplaySpeed:2000,
+        infinite:true,
+        slidesToShow:1,
+        touchMove:false
+    });
+
+    $('#sliderTrat').slick({
+        centerMode:false,
+        adaptiveHeight:true,
+        arrows:false,
+        autoplay:false,
+        infinite:false,
+        slidesToShow:2,
+        dots:true,
+        
+        responsive:[
+            {
+                breakpoint:630,
+                settings:{
+                    arrows:false,
+                    centerMode:false,
+                    slidesToShow:1,
+                    adaptiveHeight:true,
+                    autoplay:false,
+                    infinite:false,
+                    dots:true
+                }
+            }
+        ]
+    });
+});
